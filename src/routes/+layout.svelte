@@ -38,9 +38,9 @@
     }
 
     const routes = [
-        { url: "/asif-azad", name: "Home" },
-        { url: "/asif-azad/projects", name: "Projects" },
-        { url: "/asif-azad/resume", name: "Resume" },
+        { url: "/", name: "Home" },
+        { url: "/projects", name: "Projects" },
+        { url: "/resume", name: "Resume" },
     ];
 </script>
 

@@ -15,9 +15,6 @@ function load_persistent_store() {
     else {
         persistent_store.set(value);
     }
-    console.log('value', value);
-    console.log('persistent_store', persistent_store);
-    console.log(value == null);
 }
 
 export const load: PageLoad = async () => {
