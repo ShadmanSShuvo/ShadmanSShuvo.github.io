@@ -2,6 +2,7 @@ import type { PageLoad } from "./$types";
 import persistent_store from "$lib/stores/persistentstore";
 
 export const ssr = false;
+export const prerender = true;
 
 function load_persistent_store() {
     const value = JSON.parse(localStorage.getItem("persistent_store"));
