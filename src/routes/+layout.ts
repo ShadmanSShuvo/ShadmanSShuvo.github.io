@@ -6,7 +6,15 @@ export const prerender = true;
 
 function load_persistent_store() {
     const value = JSON.parse(localStorage.getItem("persistent_store"));
-    persistent_store.set(value);
+    if (value == null) {
+        persistent_store.set({
+            activeUrl: "/",
+            darkMode: true,
+        });
+    }
+    else {
+        persistent_store.set(value);
+    }
 }
 
 export const load: PageLoad = async () => {
