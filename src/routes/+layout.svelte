@@ -24,6 +24,7 @@
 
     onMount(() => {
         setThemeClass();
+        goto($persistent_store.activeUrl);
     });
 
     function toggledarkMode() {
