@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { LinkedinSolid, GithubSolid } from "flowbite-svelte-icons";
     import dp from "$lib/images/black.jpg";
 
     let name = "Asif Azad";
@@ -18,19 +17,19 @@
     <!-- Name Section -->
     <div>
         <h1
-            class="text-5xl font-bold text-primary_dark dark:text-primary_light text-center"
+            class="text-4xl md:text-5xl font-bold text-primary_dark dark:text-primary_light text-center"
         >
             {name}
         </h1>
     </div>
 
     <!-- Image and Info Section -->
-    <div class="flex flex-col items-center space-y-4 text-center">
+    <div class="flex flex-col items-center space-y-2 md:space-y-4 text-center">
         <!-- Portrait Image -->
         <img
             src={dp}
             alt="Portrait"
-            class="rounded-lg w-48 h-auto aspect-[3/4] object-cover border-2 border-secondary_dark dark:border-secondary_light"
+            class="rounded-lg w-32 md:w-48 h-auto aspect-[3/4] object-cover border-2 border-secondary_dark dark:border-secondary_light"
         />
 
         <!-- Social Links -->
@@ -42,14 +41,23 @@
                 target="_blank"
                 aria-label="LinkedIn"
             >
-                <LinkedinSolid />
+                <img
+                    src="https://img.shields.io/badge/LinkedIn-06d6a0?style=flat&logo=linkedin&logoColor=white"
+                    alt="linkedin"
+                    class="h-5 md:h-6 w-auto"
+                />
             </a>
+
             <a
                 href="https://github.com/BRAINIAC2677"
                 target="_blank"
                 aria-label="GitHub"
             >
-                <GithubSolid />
+                <img
+                    src="https://img.shields.io/badge/Github-06d6a0?style=flat&logo=github&logoColor=white"
+                    alt="github"
+                    class="h-5 md:h-6 w-auto"
+                />
             </a>
             <a
                 href="https://www.kaggle.com/brainiac2677"
@@ -57,9 +65,9 @@
                 aria-label="Kaggle"
             >
                 <img
-                    src="https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white"
+                    src="https://img.shields.io/badge/Kaggle-06d6a0?style=flat&logo=kaggle&logoColor=white"
                     alt="Kaggle"
-                    class="h-6 w-auto"
+                    class="h-5 md:h-6 w-auto"
                 />
             </a>
             <a
@@ -68,9 +76,9 @@
                 aria-label="Codeforces"
             >
                 <img
-                    src="https://img.shields.io/badge/Codeforces-FF6600?style=flat&logo=codeforces&logoColor=white"
+                    src="https://img.shields.io/badge/Codeforces-06d6a0?style=flat&logo=codeforces&logoColor=white"
                     alt="Codeforces"
-                    class="h-6 w-auto"
+                    class="h-5 md:h-6 w-auto"
                 />
             </a>
         </div>
@@ -80,10 +88,10 @@
 
         <!-- Email and Location -->
         <div class="space-y-2">
-            <p class="text-secondary_dark dark:text-secondary_light">
-                <strong>Email:</strong> asif.azad@example.com
+            <p class="text-ink_light dark:text-ink_dark">
+                <strong>Email:</strong> asifazad0178@gmail.com
             </p>
-            <p class="text-secondary_dark dark:text-secondary_light">
+            <p class="text-ink_light dark:text-ink_dark">
                 <strong>Location:</strong> Dhaka, Bangladesh
             </p>
         </div>

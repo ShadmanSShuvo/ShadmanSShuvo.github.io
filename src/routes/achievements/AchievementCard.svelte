@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { AwardOutline } from "flowbite-svelte-icons";
     export let achievement: {
         title: string;
         award: string;
@@ -10,6 +11,7 @@
 
 <div class="p-4 bg-primary_light dark:bg-primary_dark shadow-lg rounded-lg">
     <h3 class="text-lg font-bold text-primary_dark dark:text-primary_light">
+        <AwardOutline class="w-6 h-6 inline-block mr-2" />
         {achievement.title}
     </h3>
     <div

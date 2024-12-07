@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { FireSolid } from "flowbite-svelte-icons";
     export let skill: {
         title: string;
         badges: string[];
@@ -12,6 +13,7 @@
     <h3
         class="text-lg font-bold text-primary_dark dark:text-primary_light mb-4"
     >
+        <FireSolid class="w-6 h-6 inline-block mr-2" />
         {skill.title}
     </h3>
 

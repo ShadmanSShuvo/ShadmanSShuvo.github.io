@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { GithubSolid, YoutubeSolid } from "flowbite-svelte-icons";
+    import { GithubSolid, YoutubeSolid, TagSolid } from "flowbite-svelte-icons";
 
     export let project: {
         title: string;
@@ -44,7 +44,11 @@
     </div>
 
     <!-- Tags -->
-    <div class="flex flex-wrap gap-2 mb-2">
+    <div class="flex flex-wrap gap-2 mb-2 items-center">
+        <TagSolid
+            size="sm"
+            class="text-secondary_light dark:text-secondary_dark"
+        />
         {#each project.tags as tag}
             <span
                 class="px-2 py-1 text-secondary_light text-xs rounded dark:text-secondary_dark"

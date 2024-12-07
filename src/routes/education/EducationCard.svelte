@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { BadgeCheckSolid } from "flowbite-svelte-icons";
     export let education: {
         institution: string;
         timeline: string;
@@ -15,6 +16,7 @@
     <!-- Institution and Timeline -->
     <div class="flex justify-between items-center">
         <h3 class="text-lg font-bold text-primary_dark dark:text-primary_light">
+            <BadgeCheckSolid class="w-6 h-6 inline-block mr-2" />
             {education.institution}
         </h3>
         <span class="text-sm text-secondary_dark dark:text-secondary_light">

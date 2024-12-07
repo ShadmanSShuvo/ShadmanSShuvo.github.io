@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { BookOpenSolid, ReceiptSolid } from "flowbite-svelte-icons";
+
     export let research: {
         title: string;
         arxivUrl: string;
@@ -14,6 +16,7 @@
     <!-- Title and arXiv Link -->
     <div class="flex justify-between items-center mb-4">
         <h3 class="text-lg font-bold text-primary_dark dark:text-primary_light">
+            <BookOpenSolid class="w-6 h-6 inline-block mr-2" />
             {research.title}
         </h3>
         <a
