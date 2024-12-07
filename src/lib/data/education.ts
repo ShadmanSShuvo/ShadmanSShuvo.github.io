@@ -1,0 +1,40 @@
+export const education_milestone = [
+    {
+        institution: "Bangladesh University of Engineering and Technology",
+        timeline: "February 2020 - Present",
+        degree: "B.Sc. in Computer Science and Engineering",
+        grade: "CGPA: 3.90/4.00",
+        description:
+            "Ranked in the top 20% of class with two Dean's List awards for merit.",
+        courses: [
+            "CSE 305 - Computer Architecture",
+            "CSE 307 - Software Engineering",
+            "CSE 309 - Compiler Design",
+            "CSE 313 - Operating Systems",
+            "CSE 317 - Artificial Intelligence",
+            "CSE 321 - Computer Networks",
+            "CSE 405 - Computer Security",
+            "CSE 409 - Computer Graphics",
+            "CSE 463 - Introduction to Bioinformatics",
+            "CSE 471 - Machine Learning",
+            "MATH 245 - Statistics and Probability",
+            "MATH 247 - Linear Algebra",
+        ],
+    },
+    {
+        institution: "Jhenaidah Cadet College, Jhenaidah",
+        timeline: "2019",
+        degree: "Higher Secondary Certificate (HSC)",
+        grade: "GPA: 5.00/5.00",
+        description: "Became 5th in Jessore Board and received talent pool board scholarship.",
+        courses: null,
+    },
+    {
+        institution: "Jhenaidah Cadet College, Jhenaidah",
+        timeline: "2017",
+        degree: "Secondary School Certificate (SSC)",
+        grade: "GPA: 5.00/5.00",
+        description: "Received talent pool board scholarship.",
+        courses: null,
+    },
+];

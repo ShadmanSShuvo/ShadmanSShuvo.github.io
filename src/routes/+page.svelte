@@ -1,63 +1,98 @@
 <script lang="ts">
-    import {
-        FacebookSolid,
-        TwitterSolid,
-        LinkedinSolid,
-    } from "flowbite-svelte-icons";
+    import { LinkedinSolid, GithubSolid } from "flowbite-svelte-icons";
     import dp from "$lib/images/black.jpg";
+
     let name = "Asif Azad";
-    let aboutMe =
-        "This is Asif Azad. I was born in Faridpur, Bangladesh. Currently I am living in Dhaka, Bangladesh. I am a Freshmen doing my undergad in Bangladesh University of Engineering and Technology. My major is CSE. My hobby is to watch and rewatch movies. And I love to play basketball and table tennis.I am enthusiastic about technology. I enjoy getting myself acquinted with cutting-edge technologies. The wonders of technologies fascinate me in every possible way. I am optimistic about life. Life is a precious gift from the Almighty. That is why I like to feel and enjoy every bit of it. Moreover, I try to give the same vibe to others around me. I love to meet, work and connect with new people. If they share the same interests as me then it's good. And if they don't I get to broaden my perspective engaging with them.";
-    let recentUpdates = [
-        { date: "2024-01-19", update: "Lorem ipsum dolor sit amet." },
-        { date: "2024-01-18", update: "Lorem ipsum dolor sit amet." },
-        { date: "2024-01-17", update: "Lorem ipsum dolor sit amet." },
-        { date: "2024-01-16", update: "Lorem ipsum dolor sit amet." },
-        { date: "2024-01-15", update: "Lorem ipsum dolor sit amet." },
-        // Add more updates as needed
-    ];
+    let aboutMe = `
+    This is Asif Azad. I was born in Faridpur, Bangladesh. Currently I am living in Dhaka, Bangladesh. 
+    I am a Senior doing my undergrad in Bangladesh University of Engineering and Technology. My major is CSE. 
+    My hobby is to watch and rewatch movies. And I love to play basketball and table tennis. I am enthusiastic about technology. 
+    I enjoy getting myself acquainted with cutting-edge technologies. The wonders of technologies fascinate me in every possible way. 
+    I am optimistic about life. Life is a precious gift from the Almighty. That is why I like to feel and enjoy every bit of it. 
+    Moreover, I try to give the same vibe to others around me. I love to meet, work and connect with new people. 
+    If they share the same interests as me then it's good. And if they don't, I get to broaden my perspective engaging with them.
+  `;
 </script>
 
-<div class="flex flex-col items-center md:flex-row">
-    <div class="text-center md:text-left md:flex-1">
-        <!-- Your Name -->
-        <h1 class="text-3xl font-bol">{name}</h1>
-
-        <!-- About Me -->
-        <p class="mt-2">{aboutMe}</p>
+<div class="flex flex-col items-center justify-center h-screen p-4 space-y-12">
+    <!-- Name Section -->
+    <div>
+        <h1
+            class="text-5xl font-bold text-primary_dark dark:text-primary_light text-center"
+        >
+            {name}
+        </h1>
     </div>
 
-    <div class="w-48 mt-4 md:ml-4 md:mt-0">
-        <!-- Your Image -->
+    <!-- Image and Info Section -->
+    <div class="flex flex-col items-center space-y-4 text-center">
+        <!-- Portrait Image -->
         <img
             src={dp}
-            alt="Your Name"
-            class="rounded-lg w-full h-auto aspect-[3/4] object-cover"
+            alt="Portrait"
+            class="rounded-lg w-48 h-auto aspect-[3/4] object-cover border-2 border-secondary_dark dark:border-secondary_light"
         />
+
+        <!-- Social Links -->
+        <div
+            class="flex gap-4 text-secondary_dark dark:text-secondary_light text-xl"
+        >
+            <a
+                href="https://www.linkedin.com/in/asifazad2677"
+                target="_blank"
+                aria-label="LinkedIn"
+            >
+                <LinkedinSolid />
+            </a>
+            <a
+                href="https://github.com/BRAINIAC2677"
+                target="_blank"
+                aria-label="GitHub"
+            >
+                <GithubSolid />
+            </a>
+            <a
+                href="https://www.kaggle.com/brainiac2677"
+                target="_blank"
+                aria-label="Kaggle"
+            >
+                <img
+                    src="https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white"
+                    alt="Kaggle"
+                    class="h-6 w-auto"
+                />
+            </a>
+            <a
+                href="https://codeforces.com/profile/BRAINIAC77"
+                target="_blank"
+                aria-label="Codeforces"
+            >
+                <img
+                    src="https://img.shields.io/badge/Codeforces-FF6600?style=flat&logo=codeforces&logoColor=white"
+                    alt="Codeforces"
+                    class="h-6 w-auto"
+                />
+            </a>
+        </div>
+
+        <!-- Horizontal Divider -->
+        <hr class="w-full border-gray-300 dark:border-gray-700" />
+
+        <!-- Email and Location -->
+        <div class="space-y-2">
+            <p class="text-secondary_dark dark:text-secondary_light">
+                <strong>Email:</strong> asif.azad@example.com
+            </p>
+            <p class="text-secondary_dark dark:text-secondary_light">
+                <strong>Location:</strong> Dhaka, Bangladesh
+            </p>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="max-w-2xl text-justify">
+        <p class="text-sm text-ink_light dark:text-ink_dark leading-relaxed">
+            {aboutMe}
+        </p>
     </div>
 </div>
-
-<section class="mt-8">
-    <!-- Recent Updates/News -->
-    <h2 class="mb-4 text-2xl font-bold">Recent Updates</h2>
-    {#each recentUpdates as { date, update }}
-        <div class="mb-2">
-            <p class="text-sm">{date}</p>
-            <p>{update}</p>
-        </div>
-    {/each}
-</section>
-<!-- Social Media Links Section -->
-<section class="flex justify-center mt-8 space-x-4">
-    <!-- Replace href values with your actual social media URLs -->
-    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-        <FacebookSolid class="w-6 h-6 text-blue-600" />
-    </a>
-    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-        <TwitterSolid class="w-6 h-6 text-blue-400" />
-    </a>
-    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-        <LinkedinSolid class="w-6 h-6 text-blue-500" />
-    </a>
-    <!-- Add more icons as needed -->
-</section>

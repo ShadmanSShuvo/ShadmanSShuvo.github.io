@@ -40,8 +40,11 @@
 
     const routes = [
         { url: "/", name: "Home" },
+        { url: "/achievements", name: "Achievements" },
         { url: "/projects", name: "Projects" },
-        { url: "/resume", name: "Resume" },
+        { url: "/skills", name: "Skills" },
+        { url: "/education", name: "Education" },
+        { url: "/research", name: "Research" },
     ];
 </script>
 
