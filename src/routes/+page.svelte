@@ -13,7 +13,9 @@
   `;
 </script>
 
-<div class="flex flex-col items-center justify-center h-screen p-4 space-y-12">
+<div
+    class="flex flex-col items-center justify-center h-screen p-4 space-y-4 md:space-y-12"
+>
     <!-- Name Section -->
     <div>
         <h1
