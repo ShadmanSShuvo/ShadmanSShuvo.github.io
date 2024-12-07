@@ -1,5 +1,8 @@
 <script lang="ts">
+    import { goto } from "$app/navigation";
+
     import dp from "$lib/images/black.jpg";
+    import persistent_store from "$lib/stores/persistentstore";
 
     let name = "Asif Azad";
     let aboutMe = `
@@ -11,6 +14,8 @@
     Moreover, I try to give the same vibe to others around me. I love to meet, work and connect with new people. 
     If they share the same interests as me then it's good. And if they don't, I get to broaden my perspective engaging with them.
   `;
+    let prevUrl = "/research";
+    let nextUrl = "/achievements";
 </script>
 
 <div
@@ -112,5 +117,37 @@
             <strong> "Life is Beautiful" </strong>
         </p>
         <hr class="w-full border-secondary_light dark:border-secondary_dark" />
+    </div>
+
+    <div class="flex justify-between items-center mt-8 w-full">
+        <!-- Previous Page -->
+        <button
+            class="block py-2 px-4 transition-all rounded text-ink_light hover:bg-gray-100 hover:text-secondary_light md:p-0 dark:text-ink_dark dark:hover:text-secondary_dark dark:hover:bg-gray-700"
+            on:click|stopPropagation={() => {
+                $persistent_store.activeUrl = prevUrl;
+                localStorage.setItem(
+                    "persistent_store",
+                    JSON.stringify($persistent_store),
+                );
+                goto(prevUrl);
+            }}
+        >
+            ← Previous
+        </button>
+
+        <!-- Next Page -->
+        <button
+            class="block py-2 px-4 transition-all rounded text-ink_light hover:bg-gray-100 hover:text-secondary_light md:p-0 dark:text-ink_dark dark:hover:text-secondary_dark dark:hover:bg-gray-700"
+            on:click|stopPropagation={() => {
+                $persistent_store.activeUrl = nextUrl;
+                localStorage.setItem(
+                    "persistent_store",
+                    JSON.stringify($persistent_store),
+                );
+                goto(nextUrl);
+            }}
+        >
+            Next →
+        </button>
     </div>
 </div>
