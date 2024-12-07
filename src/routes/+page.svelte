@@ -105,4 +105,14 @@
             {aboutMe}
         </p>
     </div>
+
+    <!-- My favourite quote -->
+    <div class="text-center">
+        <p class="text-sm text-ink_light dark:text-ink_dark">
+            <strong>
+                "The only way to do great work is to love what you do."
+            </strong>
+        </p>
+        <hr class="w-full border-secondary_light dark:border-secondary_dark" />
+    </div>
 </div>
