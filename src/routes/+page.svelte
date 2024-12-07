@@ -14,7 +14,7 @@
 </script>
 
 <div
-    class="flex flex-col items-center justify-center h-screen p-4 space-y-4 md:space-y-12"
+    class="flex flex-col items-center justify-center min-h-screen p-4 space-y-4 md:space-y-12 my-8"
 >
     <!-- Name Section -->
     <div>
@@ -109,9 +109,7 @@
     <!-- My favourite quote -->
     <div class="text-center">
         <p class="text-sm text-ink_light dark:text-ink_dark">
-            <strong>
-                "The only way to do great work is to love what you do."
-            </strong>
+            <strong> "Life is Beautiful" </strong>
         </p>
         <hr class="w-full border-secondary_light dark:border-secondary_dark" />
     </div>
