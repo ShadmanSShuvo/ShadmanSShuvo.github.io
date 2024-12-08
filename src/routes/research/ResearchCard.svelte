@@ -47,7 +47,7 @@
     </p>
 
     <!-- Abstract -->
-    <p class="text-sm text-ink_light dark:text-ink_dark">
+    <p class="text-sm text-ink_light dark:text-ink_dark text-justify">
         <strong>Abstract:</strong>
         {research.abstract}
     </p>
