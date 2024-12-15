@@ -1,6 +1,7 @@
 import sunshine_poster from "$lib/images/sunshine.jpg";
 import buet_cse_courseworks_poster from "$lib/images/buet_cse_courseworks.jpg";
 import taskflow_poster from "$lib/images/taskflow.png";
+import c_compiler_poster from "$lib/images/c_compiler_poster.webp";
 
 export const projects = [
     {
@@ -10,7 +11,16 @@ export const projects = [
         youtubeUrl: null,
         tags: ["BUET CSE", "Courseworks"],
         year: "2023",
-        description: "This doc contains the links to all of my course works and course related extra works of BUET CSE."
+        description: "This repository contains the links to all of my course works and course related extra works of BUET CSE."
+    },
+    {
+        title: "Minimal C Compiler",
+        imageUrl: c_compiler_poster,
+        githubUrl: "https://github.com/BRAINIAC2677/CSE310-Compiler",
+        youtubeUrl: null,
+        tags: ["C", "Flex", "Bison"],
+        year: "2023",
+        description: "Developed a simplified C compiler as part of the CSE310 coursework. The project progressed through key stages: lexical analysis, grammar rules, syntax analysis (symbol table and parse tree), semantic analysis, and assembly code generation using Flex and Bison."
     },
     {
         title: "TaskFlow",

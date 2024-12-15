@@ -19,14 +19,16 @@
             <BookOpenSolid class="w-6 h-6 inline-block mr-2" />
             {research.title}
         </h3>
-        <a
-            href={research.arxivUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-secondary_dark dark:text-secondary_light hover:underline"
-        >
-            <i class="fab fa-arxiv mr-2"></i> arXiv
-        </a>
+        {#if research.arxivUrl}
+            <a
+                href={research.arxivUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-secondary_dark dark:text-secondary_light hover:underline"
+            >
+                <i class="fab fa-arxiv mr-2"></i> arXiv
+            </a>
+        {/if}
     </div>
 
     <!-- Keywords -->
@@ -41,11 +43,12 @@
     </div>
 
     <!-- Co-authors -->
-    <p class="text-sm text-secondary_dark dark:text-secondary_light mb-6">
-        <strong>Co-authors:</strong>
-        {research.coAuthors.join(", ")}
-    </p>
-
+    {#if research.coAuthors.length > 0}
+        <p class="text-sm text-secondary_dark dark:text-secondary_light mb-6">
+            <strong>Co-authors:</strong>
+            {research.coAuthors.join(", ")}
+        </p>
+    {/if}
     <!-- Abstract -->
     <p class="text-sm text-ink_light dark:text-ink_dark text-justify">
         <strong>Abstract:</strong>

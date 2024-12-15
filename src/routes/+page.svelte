@@ -18,13 +18,11 @@
     let nextUrl = "/achievements";
 </script>
 
-<div
-    class="flex flex-col items-center justify-center min-h-screen p-4 space-y-4 md:space-y-12 my-8"
->
+<div class="flex flex-col items-center p-4 space-y-4 md:space-y-8 my-4">
     <!-- Name Section -->
     <div>
         <h1
-            class="text-4xl md:text-5xl font-bold text-primary_dark dark:text-primary_light text-center"
+            class="text-3xl md:text-4xl font-bold text-primary_dark dark:text-primary_light text-center"
         >
             {name}
         </h1>

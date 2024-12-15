@@ -67,6 +67,14 @@ export const achievements = [
                 description: "We made a full-stack decentralised application (dapp) called Certereum. Certereum is mainly a certificate verification and issuing platform with many more added features.",
             },
 
+            {
+                title: "Therap Javafest 2024",
+                award: "Finalist",
+                month: "October",
+                year: "2024",
+                description: "We developed FluentAI which is an AI-integrated language learning platform that leverages the power of artificial intelligence to provide personalized learning experiences.",
+            },
+
 
         ],
     },
