@@ -5,7 +5,7 @@ export const education_milestone = [
         degree: "B.Sc. in Computer Science and Engineering",
         grade: "CGPA: 3.90/4.00",
         description:
-            "Ranked in the top 20% of class with two Dean's List awards for merit.",
+            "Ranked in the top 20% of class with three Dean's List awards for merit.",
         courses: [
             "CSE 305 - Computer Architecture",
             "CSE 307 - Software Engineering",
