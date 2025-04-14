@@ -4,10 +4,10 @@
     import dp from "$lib/images/black.jpg";
     import persistent_store from "$lib/stores/persistentstore";
 
-    let name = "Asif Azad";
+    let name = "Md. Shadman Shahriyar Shuvo";
     let aboutMe = `
-    This is Asif Azad. I was born in Faridpur, Bangladesh. Currently I am living in Dhaka, Bangladesh. 
-    I am a Senior doing my undergrad in Bangladesh University of Engineering and Technology. My major is CSE. 
+    This is Md. Shadman Shahriyar Shuvo. I was born in Rangpur, Bangladesh. Currently I am living in Dhaka, Bangladesh. 
+    I am a Fresher doing my undergrad in Bangladesh University of Engineering and Technology. My major is CSE. 
     My hobby is to watch and rewatch movies. And I love to play basketball and table tennis. I am enthusiastic about technology. 
     I enjoy getting myself acquainted with cutting-edge technologies. The wonders of technologies fascinate me in every possible way. 
     I am optimistic about life. Life is a precious gift from the Almighty. That is why I like to feel and enjoy every bit of it. 
@@ -42,7 +42,7 @@
             class="flex gap-4 text-secondary_dark dark:text-secondary_light text-xl"
         >
             <a
-                href="https://www.linkedin.com/in/asifazad2677"
+                href="https://www.linkedin.com/in/sdmnsvo"
                 target="_blank"
                 aria-label="LinkedIn"
             >
@@ -54,7 +54,7 @@
             </a>
 
             <a
-                href="https://github.com/BRAINIAC2677"
+                href="https://github.com/ShadmanSShuvo"
                 target="_blank"
                 aria-label="GitHub"
             >
@@ -65,7 +65,7 @@
                 />
             </a>
             <a
-                href="https://www.kaggle.com/brainiac2677"
+                href="https://www.kaggle.com/shadmanshuvo"
                 target="_blank"
                 aria-label="Kaggle"
             >
@@ -76,7 +76,7 @@
                 />
             </a>
             <a
-                href="https://codeforces.com/profile/BRAINIAC77"
+                href="https://codeforces.com/profile/shadmansshuvo"
                 target="_blank"
                 aria-label="Codeforces"
             >
@@ -94,7 +94,7 @@
         <!-- Email and Location -->
         <div class="space-y-2">
             <p class="text-ink_light dark:text-ink_dark">
-                <strong>Email:</strong> asifazad0178@gmail.com
+                <strong>Email:</strong> shuvo2005rzs@gmail.com
             </p>
             <p class="text-ink_light dark:text-ink_dark">
                 <strong>Location:</strong> Dhaka, Bangladesh

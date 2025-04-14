@@ -5,43 +5,33 @@ import c_compiler_poster from "$lib/images/c_compiler_poster.webp";
 
 export const projects = [
     {
-        title: "BUET CSE Courseworks",
+        title: "Flappy Bird Clone Game",
         imageUrl: buet_cse_courseworks_poster,
-        githubUrl: "https://github.com/BRAINIAC2677/BUET-CSE-Courseworks",
+        githubUrl: "https://github.com/ShadmanSShuvo/FlappyBird",
         youtubeUrl: null,
         tags: ["BUET CSE", "Courseworks"],
-        year: "2023",
-        description: "This repository contains the links to all of my course works and course related extra works of BUET CSE."
-    },
-    {
-        title: "Minimal C Compiler",
-        imageUrl: c_compiler_poster,
-        githubUrl: "https://github.com/BRAINIAC2677/CSE310-Compiler",
-        youtubeUrl: null,
-        tags: ["C", "Flex", "Bison"],
-        year: "2023",
-        description: "Developed a simplified C compiler as part of the CSE310 coursework. The project progressed through key stages: lexical analysis, grammar rules, syntax analysis (symbol table and parse tree), semantic analysis, and assembly code generation using Flex and Bison."
-    },
-    {
-        title: "TaskFlow",
-        imageUrl: taskflow_poster,
-        githubUrl: "https://github.com/BRAINIAC2677/taskflow",
-        youtubeUrl: null,
-        tags: ["Svelte", "Typescript", "Node.js", "postgreSQL"],
         year: "2024",
-        description:
-            "TaskFlow is an advanced AI powered task management system that helps you to manage your tasks efficiently.",
+        description: "This repository contains the links to the CSE 102 iGraphics Project of L1-T1."
     },
     {
-        title: "Sunshine",
-        imageUrl: sunshine_poster,
-        githubUrl: "https://github.com/BRAINIAC2677/Sunshine",
+        title: "CSE 102 Courseworks",
+        imageUrl: c_compiler_poster,
+        githubUrl: "https://github.com/ShadmanSShuvo/CSE102-coursework",
         youtubeUrl: null,
-        tags: ["NASA Space Apps Challenge", "React-Native", "Firebase"],
+        tags: ["C"],
+        year: "2024",
+        description: "This repository contains the links to all my courseworks for CSE 102 sessional course of L1-T1."
+    },
+    {
+        title: "National Camp Journal",
+        imageUrl: taskflow_poster,
+        githubUrl: "https://github.com/ShadmanSShuvo/Nat-Camp-Journal",
+        youtubeUrl: null,
+        tags: ["LaTeX", "Math", "Olympiad", "Problem Solving"],
         year: "2021",
         description:
-            "Sunshine app will help to empower and encourage solar energy among mass people and assist to keep track of the system of the installed solar system.",
-    },
+            "This is a LaTeX project that contains the journal of the National Olympiad Camp 2021. It contains the lectures, problems and solutions of the camp."
+        },
 
 ];
 
