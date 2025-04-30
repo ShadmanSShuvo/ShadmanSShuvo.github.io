@@ -16,6 +16,7 @@
   `;
     let prevUrl = "/research";
     let nextUrl = "/achievements";
+
 </script>
 
 <div class="flex flex-col items-center space-y-4 md:space-y-8">
