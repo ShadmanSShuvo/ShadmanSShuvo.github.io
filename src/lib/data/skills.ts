@@ -50,4 +50,17 @@ export const skills = [
             "https://img.shields.io/badge/DigitalOcean-digitalocean-blue?style=flat&logo=digitalocean&logoColor=white",
         ],
     },
+    /*
+    {
+        title: "Name",
+        badges: [
+            "https://img.shields.io/badge/S-s",
+            "https://img.shields.io/badge/H-h",
+            "https://img.shields.io/badge/U-u",
+            "https://img.shields.io/badge/V-v",
+            "https://img.shields.io/badge/O-o",
+            "https://img.shields.io/badge/SHuVO-shuvo",
+        ],
+    },
+    */
 ];

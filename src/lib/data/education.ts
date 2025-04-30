@@ -1,6 +1,6 @@
 export const education_milestone = [
     {
-        institution: "Bangladesh University of Engineering and Technology",
+        institution: "Bangladesh University of Engineering and Technology (BUET)",
         timeline: "August 2024 - Present",
         degree: "B.Sc. in Computer Science and Engineering",
         grade: "CGPA: 3.88/4.00 (upto 1st semester)",
