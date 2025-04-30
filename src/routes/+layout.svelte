@@ -45,6 +45,7 @@
         { url: "/skills", name: "Skills" },
         { url: "/education", name: "Education" },
         { url: "/research", name: "Research" },
+        { url: "/teaching", name: "Teaching" },
     ];
 </script>
 

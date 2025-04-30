@@ -2,24 +2,24 @@
     import { goto } from "$app/navigation";
     import persistent_store from "$lib/stores/persistentstore";
 
-    import ResearchCard from "./ResearchCard.svelte";
-    import { researches } from "$lib/data/researches";
+    import TeachingCard from "./TeachingCard.svelte";
+    import { teaching } from "$lib/data/teaching";
 
-    let prevUrl = "/education";
-    let nextUrl = "/teaching";
+    let prevUrl = "/achievements";
+    let nextUrl = "/skills";
 </script>
 
 <div class="container mx-auto p-4">
     <h1
         class="text-3xl font-bold text-primary_dark dark:text-primary_light my-8"
     >
-        Research
+        Teaching
     </h1>
 
-    <!-- Research Cards (Vertical Layout) -->
-    <div class="space-y-6">
-        {#each researches as research}
-            <ResearchCard {research} />
+    <!-- teaching Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {#each teaching as teaching}
+            <TeachingCard {teaching} />
         {/each}
     </div>
 

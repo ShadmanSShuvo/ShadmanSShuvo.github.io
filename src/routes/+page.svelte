@@ -6,13 +6,13 @@
 
     let name = "Md. Shadman Shahriyar Shuvo";
     let aboutMe = `
-    This is Md. Shadman Shahriyar Shuvo. I was born in Rangpur, Bangladesh. Currently I am living in Dhaka, Bangladesh. 
-    I am a Fresher doing my undergrad in Bangladesh University of Engineering and Technology. My major is CSE. 
-    My hobby is to watch and rewatch movies. And I love to play basketball and table tennis. I am enthusiastic about technology. 
-    I enjoy getting myself acquainted with cutting-edge technologies. The wonders of technologies fascinate me in every possible way. 
-    I am optimistic about life. Life is a precious gift from the Almighty. That is why I like to feel and enjoy every bit of it. 
-    Moreover, I try to give the same vibe to others around me. I love to meet, work and connect with new people. 
-    If they share the same interests as me then it's good. And if they don't, I get to broaden my perspective engaging with them.
+    Hi, I’m Md. Shadman Shahriyar Shuvo. I was born and raised in Rangpur, Bangladesh, and now I’m living in Dhaka as I pursue my undergraduate studies at Bangladesh University of Engineering and Technology (BUET), majoring in Computer Science and Engineering.
+
+    From a young age, I’ve always been drawn to technology—it amazes me how rapidly it evolves and how deeply it impacts our lives. That curiosity has grown into a passion for exploring the frontiers of cutting-edge tech, and it fuels my academic and personal journey every day.
+
+    Outside the world of code and computers, I find joy in watching and rewatching movies—they give me a sense of comfort and a space to reflect. I also love playing carrom and table tennis, which keep me active and bring out my competitive spirit.
+
+    I try to live life with a deep sense of gratitude. I believe it’s a precious gift from the Almighty, and I do my best to savor each moment. I aim to pass on that positive energy to the people around me. I enjoy meeting new people, working in teams, and learning from those whose perspectives differ from mine—it’s one of the ways I keep growing.
   `;
     let prevUrl = "/research";
     let nextUrl = "/achievements";

@@ -13,7 +13,7 @@ export const achievements = [
                 title: "",
                 award: "",
                 month: "",
-                year: "203",
+                year: "",
                 description: "",
             },
             {
