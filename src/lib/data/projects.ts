@@ -1,8 +1,3 @@
-import sunshine_poster from "$lib/images/sunshine.jpg";
-import buet_cse_courseworks_poster from "$lib/images/buet_cse_courseworks.jpg";
-import taskflow_poster from "$lib/images/taskflow.png";
-import c_compiler_poster from "$lib/images/c_compiler_poster.webp";
-
 export const projects = [
     {
         title: "Flappy Bird Clone Game",

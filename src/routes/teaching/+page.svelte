@@ -6,7 +6,7 @@
     import { teaching } from "$lib/data/teaching";
 
     let prevUrl = "/achievements";
-    let nextUrl = "/skills";
+    let nextUrl = "/";
 </script>
 
 <div class="container mx-auto p-4">
@@ -15,6 +15,18 @@
     >
         Teaching
     </h1>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <a
+            href="https://github.com/ShadmanSShuvo/teaching"
+            target="_blank"
+            class="text-secondary_light dark:text-secondary_dark"
+            ><big
+                ><b>Follow this link to see my teaching materials on GitHub</b
+                ></big
+            ></a
+        >
+    </div>
 
     <!-- teaching Grid -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">

@@ -14,7 +14,7 @@
 
     I try to live life with a deep sense of gratitude. I believe it’s a precious gift from the Almighty, and I do my best to savor each moment. I aim to pass on that positive energy to the people around me. I enjoy meeting new people, working in teams, and learning from those whose perspectives differ from mine—it’s one of the ways I keep growing.
   `;
-    let prevUrl = "/research";
+    let prevUrl = "/teaching";
     let nextUrl = "/achievements";
 </script>
 
