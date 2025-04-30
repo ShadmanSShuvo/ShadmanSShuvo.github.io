@@ -5,7 +5,7 @@ export const education_milestone = [
         degree: "B.Sc. in Computer Science and Engineering",
         grade: "CGPA: 3.88/4.00 (upto 1st semester)",
         description:
-            "Ranked in the top 30% of class with three Dean's List awards for merit.",
+            "Currently enrolled in the CSE program at BUET, one of the most prestigious engineering universities in Bangladesh. I am actively involved in various academic and extracurricular activities.",
         courses: [
             "CSE 101 - Introduction to Computer Science",
             "CSE 103 - Discrete Mathematics",
