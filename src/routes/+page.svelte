@@ -16,7 +16,6 @@
   `;
     let prevUrl = "/research";
     let nextUrl = "/achievements";
-
 </script>
 
 <div class="flex flex-col items-center space-y-4 md:space-y-8">
@@ -65,6 +64,40 @@
                     class="h-5 md:h-6 w-auto"
                 />
             </a>
+            <a
+                href="https://www.facebook.com/shadmansshuvo"
+                target="_blank"
+                aria-label="Facebook"
+            >
+                <img
+                    src="https://img.shields.io/badge/Facebook-06d6a0?style=flat&logo=facebook&logoColor=white"
+                    alt="facebook"
+                    class="h-5 md:h-6 w-auto"
+                />
+            </a>
+            <a
+                href="https://www.instagram.com/shadmansshuvo/"
+                target="_blank"
+                aria-label="Instagram"
+            >
+                <img
+                    src="https://img.shields.io/badge/Instagram-06d6a0?style=flat&logo=instagram&logoColor=white"
+                    alt="instagram"
+                    class="h-5 md:h-6 w-auto"
+                />
+            </a>
+            <a
+                href="https://www.youtube.com/@Shadman_Shuvo"
+                target="_blank"
+                aria-label="YouTube"
+            >
+                <img
+                    src="https://img.shields.io/badge/YouTube-06d6a0?style=flat&logo=youtube&logoColor=white"
+                    alt="youtube"
+                    class="h-5 md:h-6 w-auto"
+                />
+            </a>
+
             <a
                 href="https://www.kaggle.com/shadmanshuvo"
                 target="_blank"
