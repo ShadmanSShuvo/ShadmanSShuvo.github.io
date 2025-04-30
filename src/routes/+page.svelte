@@ -97,7 +97,7 @@
                     class="h-5 md:h-6 w-auto"
                 />
             </a>
-
+            <!--
             <a
                 href="https://www.kaggle.com/shadmanshuvo"
                 target="_blank"
@@ -120,6 +120,7 @@
                     class="h-5 md:h-6 w-auto"
                 />
             </a>
+        -->
         </div>
 
         <!-- Horizontal Divider -->
