@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <div id="app" class="container mx-auto p-4">
+        <!-- Navigation -->
+        <nav class="bg-blue-600 text-white p-4 rounded-md mb-6">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">My Personal Blog</h1>
+                <div>
+                    <button id="login-btn" class="bg-blue-800 px-4 py-2 rounded hidden">Login</button>
+                    <button id="logout-btn" class="bg-blue-800 px-4 py-2 rounded hidden">Logout</button>
+                </div>
+            </div>
+        </nav>
+        <!-- Login Form -->
+        <div id="login-form" class="hidden bg-white p-6 rounded-md shadow-md max-w-md mx-auto">
+            <h2 class="text-xl font-bold mb-4">Login</h2>
+            <input id="email" type="email" placeholder="Email" class="w-full p-2 mb-4 border rounded">
+            <input id="password" type="password" placeholder="Password" class="w-full p-2 mb-4 border rounded">
+            <button id="submit-login" class="bg-blue-600 text-white px-4 py-2 rounded w-full">Login</button>
+            <p id="login-error" class="text-red-500 mt-2 hidden"></p>
+        </div>
+        <!-- Blog Post Form -->
+        <div id="post-form" class="hidden bg-white p-6 rounded-md shadow-md max-w-md mx-auto mb-6">
+            <h2 class="text-xl font-bold mb-4">Create a Blog Post</h2>
+            <input id="post-title" type="text" placeholder="Title" class="w-full p-2 mb-4 border rounded">
+            <textarea id="post-content" placeholder="Content" class="w-full p-2 mb-4 border rounded h-32"></textarea>
+            <button id="submit-post" class="bg-blue-600 text-white px-4 py-2 rounded w-full">Post</button>
+        </div>
+        <!-- Blog Posts Display -->
+        <div id="posts" class="grid gap-6"></div>
+    </div>
+    <script>
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyD4S6kqTVi6xbsTHUaQrueia5ZSbb_k_SY",
+            authDomain: "blog-77409.firebaseapp.com",
+            databaseURL: "https://blog-77409-default-rtdb.firebaseio.com",
+            projectId: "blog-77409",
+            storageBucket: "blog-77409.firebasestorage.app",
+            messagingSenderId: "80432591168",
+            appId: "1:80432591168:web:2c35dcee5121ad2e3a8aa5",
+            measurementId: "G-PSEVSB7J1C"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.database();
+        const loginForm = document.getElementById('login-form');
+        const postForm = document.getElementById('post-form');
+        const loginBtn = document.getElementById('login-btn');
+        const logoutBtn = document.getElementById('logout-btn');
+        const submitLogin = document.getElementById('submit-login');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const loginError = document.getElementById('login-error');
+        const postTitle = document.getElementById('post-title');
+        const postContent = document.getElementById('post-content');
+        const submitPost = document.getElementById('submit-post');
+        const postsDiv = document.getElementById('posts');
+        auth.onAuthStateChanged(user => {
+            if (user) {
+                loginBtn.classList.add('hidden');
+                logoutBtn.classList.remove('hidden');
+                loginForm.classList.add('hidden');
+                postForm.classList.remove('hidden');
+                loadPosts();
+            } else {
+                loginBtn.classList.remove('hidden');
+                logoutBtn.classList.add('hidden');
+                loginForm.classList.remove('hidden');
+                postForm.classList.add('hidden');
+                postsDiv.innerHTML = '';
+                loadPosts();
+            }
+        });
+        loginBtn.addEventListener('click', () => {
+            loginForm.classList.toggle('hidden');
+        });
+        submitLogin.addEventListener('click', () => {
+            const email = emailInput.value;
+            const password = passwordInput.value;
+            auth.signInWithEmailAndPassword(email, password)
+                .catch(error => {
+                    loginError.classList.remove('hidden');
+                    loginError.textContent = error.message;
+                });
+        });
+        logoutBtn.addEventListener('click', () => {
+            auth.signOut();
+        });
+        submitPost.addEventListener('click', () => {
+            const title = postTitle.value;
+            const content = postContent.value;
+            if (title && content) {
+                const user = auth.currentUser;
+                const post = {
+                    title,
+                    content,
+                    timestamp: Date.now(),
+                    author: user.email
+                };
+                db.ref('posts').push(post).then(() => {
+                    postTitle.value = '';
+                    postContent.value = '';
+                });
+            }
+        });
+        function loadPosts() {
+            db.ref('posts').on('value', snapshot => {
+                postsDiv.innerHTML = '';
+                const posts = snapshot.val();
+                if (posts) {
+                    Object.entries(posts).reverse().forEach(([id, post]) => {
+                        const postDiv = document.createElement('div');
+                        postDiv.className = 'bg-white p-6 rounded-md shadow-md';
+                        postDiv.innerHTML = `
+              <h2 class="text-xl font-bold mb-2">${post.title}</h2>
+              <p class="text-gray-600 mb-2">By ${post.author} on ${new Date(post.timestamp).toLocaleDateString()}</p>
+              <p>${post.content}</p>
+            `;
+                        postsDiv.appendChild(postDiv);
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
